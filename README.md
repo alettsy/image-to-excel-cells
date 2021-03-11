@@ -7,3 +7,7 @@
     - `python main.py`
   
 * The result will be output to `output.xls` in the same directory
+
+# Note
+
+Doesn't seem to work for very large images
