@@ -2,7 +2,7 @@ from PIL import Image
 import xlsxwriter as excel
 import time
 
-def start_conversion():
+def start_conversion(width, height, pixels):
     # Create a new Excel book
     book = excel.Workbook("output.xls")
 
@@ -11,9 +11,6 @@ def start_conversion():
 
     # Set the sheet's cell size to 40 x 40
     sheet1.set_default_row(40)
-
-    # Load in all the pixel data from the image
-    pixels = im.load()
 
     # Generate the Excel cells from the image
     letters = encode_numbers(width)
@@ -98,7 +95,7 @@ if __name__ == '__main__':
     start_time = time.time()
 
     # Convert image to Excel cells
-    start_conversion()
+    start_conversion(width, height, im.load())
 
     # Print out how long it took
     end_time = time.time()
