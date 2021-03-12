@@ -4,7 +4,7 @@ import time
 
 def start_conversion(width, height, pixels):
     # Create a new Excel book
-    book = excel.Workbook("output.xls")
+    book = excel.Workbook("output.xlsx")
 
     # Create a new worksheet inside the Excel book
     sheet1 = book.add_worksheet()
