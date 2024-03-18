@@ -3,7 +3,7 @@
 * Install dependencies
   - `pip install -r requirements.txt`
  
-* Run the program and input the path of your image
+* Run the program
   - `python main.py`
   
 * Enter the path of the image and hit `enter`
