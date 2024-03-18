@@ -74,7 +74,7 @@ def rgb_to_hex(rgb):
 
 if __name__ == '__main__':
     # Get the file name from user
-    file = input("Enter photo name: ")
+    file = input("Enter photo path: ")
 
     # Try and open the image
     im = None
